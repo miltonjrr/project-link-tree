@@ -10,10 +10,10 @@ function toggleMode() {
   if (html.classList.contains("light")) {
     //image with lightmode on
     img.setAttribute("src", "./assets/personal-avatar-light.png") //with setAttibute we can change the attribute we set o the html file
-    img.setAttribute("alt", "Imagem so maiky de oculos escuros.")
+    img.setAttribute("alt", "Imagem do Milton Junior.")
   } else {
     //image with lightmode off
     img.setAttribute("src", "./assets/personal-avatar.png")
-    img.setAttribute("alt", "Imagem do maiky sorrindo e com fundo amarelo.")
+    img.setAttribute("alt", "Imagem do Milton Junior em preto e branco.")
   }
 }
