@@ -92,7 +92,7 @@ we can center things by using the father attribute and use the text-align to ali
 }
 
 .light #switch button {
-  animation: slide 0.2s forwards;
+  animation: slide-in 0.2s forwards;
 }
 
 #switch span {
@@ -182,7 +182,7 @@ footer {
 }
 
 /*animations*/
-@keyframes slide {
+@keyframes slide-in {
   from {
     left: 0;
   }
