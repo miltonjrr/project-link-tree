@@ -83,16 +83,21 @@ we can center things by using the father attribute and use the text-align to ali
   z-index: 1;
   left: 0;
   transform: translateY(-50%);
+
+  animation: slide-back 0.2s;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: slide 0.2s forwards;
 }
 
 #switch span {
   display: block;
-  width: 60px;
+  width: 64px;
   height: 24px;
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
@@ -173,5 +178,24 @@ footer {
 
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+/*animations*/
+@keyframes slide {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
